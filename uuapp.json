@@ -1,0 +1,17 @@
+{
+  "product": "bpmi_subjectman_maing01",
+  "version": "0.1.0",
+  "license": "License Commercial",
+  "description": {
+    "en": "",
+    "cs": ""
+  },
+  "devkit": {
+    "development": {
+      "appBoxLocationUri": "----- VALUE REQUIRED -----",
+      "appDeploymentUri": null
+    }
+  },
+  "bpmi_subjectman_maing01-hi": {},
+  "bpmi_subjectman_maing01-server": {}
+}
