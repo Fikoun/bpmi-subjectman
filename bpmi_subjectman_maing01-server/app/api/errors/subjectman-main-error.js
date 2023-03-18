@@ -29,15 +29,28 @@ const Init = {
     }
   },
 
-  CreateAwscFailed: class extends SubjectmanMainUseCaseError {
+  SubjectManDaoCreateFailed: class extends SubjectmanMainUseCaseError {
     constructor() {
       super(...arguments);
-      this.code = `${Init.UC_CODE}createAwscFailed`;
-      this.message = "Create uuAwsc failed.";
+      this.code = `${Init.UC_CODE}subjectManDaoCreateFailed`;
+      this.message = "Create SubjectMan by DAO method failed.";
+    }
+  },
+};
+
+const Load = {
+  UC_CODE: `${SubjectmanMainUseCaseError.ERROR_PREFIX}load/`,
+
+  SubjectManDoesNotExist: class extends SubjectmanMainUseCaseError {
+    constructor() {
+      super(...arguments);
+      this.code = `${Load.UC_CODE}subjectManDoesNotExist`;
+      this.message = "UuObject SubjectMan does not exist.";
     }
   },
 };
 
 module.exports = {
   Init,
+  Load,
 };

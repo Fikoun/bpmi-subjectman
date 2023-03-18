@@ -25,6 +25,11 @@
         "realization": "index.html",
         "httpMethod": "GET",
         "type": "UVE"
+      },
+      "studyProgramme/list": {
+        "realization": "api/controllers/StudyProgrammeController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
       }
     }
   }
